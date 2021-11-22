@@ -2,13 +2,20 @@ const { Client, Intents, discord, Collection } = require('discord.js')
 const config = require("./configs/config.json");
 const moment = require("moment");
 const fs = require("fs");
+const Dashboard = require("discord-easy-dashboard");
 
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 client.commands = new Collection();
 
 client.login(config.token);
-
+client.dashboard = new Dashboard(client, {
+  name: 'Omega', // Bot's name
+  description: 'A super cool bot with an online dashboard!', // Bot's description
+  baseUrl: 'https://dc01.devnode.pro', // Leave this if ur in local development
+  port: 25575,
+  secret: 'hI_76nfA6q_YE2YZD5FtCKyz7fMDkce8', // client.secret -> accessible at https://discord.com/developers/applications (OAuth2 section)
+});
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -38,4 +45,6 @@ for (const file of eventFiles) {
 	}
 }
 
-
+client.commands.forEach(command => {
+  client.dashboard.registerCommand(command.name, command.description, command.usage);
+})
