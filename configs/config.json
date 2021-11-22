@@ -1,6 +1,6 @@
 {
     "prefix": "!",
-    "token": "Token",
+    "token": "",
 
     "activity": "Loading.....",
     "activity_type": "PLAYING"
