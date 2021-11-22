@@ -1,12 +1,10 @@
 {
     "prefix": "!",
-    "token": "OTEyMjUxODIzNjkwMjQwMDEw.YZtOtw.l9di7C5OGKD6ygvG2F-zdjUUt7o",
+    "token": "Token Here",
 
     "activity": "Loading.....",
-    "activity_type": "PLAYING",
+    "activity_type": "PLAYING"
 
-    "baseUrl": "http://localhost",
-    "port": 3000
 }
 
 

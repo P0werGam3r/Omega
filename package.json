@@ -23,6 +23,7 @@
   "dependencies": {
     "discord-easy-dashboard": "^1.0.9",
     "discord.js": "^13.3.1",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "quick.db": "^7.1.3"
   }
 }
