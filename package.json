@@ -1,0 +1,27 @@
+{
+  "name": "omega",
+  "version": "1.0.0",
+  "description": "Discord server? Delta!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P0werGam3r/Omega.git"
+  },
+  "keywords": [
+    "Discord",
+    "Bot"
+  ],
+  "author": "P0werGam3r, MikeDeveloperElectroDevelopment2021",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P0werGam3r/Omega/issues"
+  },
+  "homepage": "https://github.com/P0werGam3r/Omega#readme",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "moment": "^2.29.1"
+  }
+}
