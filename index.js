@@ -12,7 +12,7 @@ client.login(config.token);
 client.dashboard = new Dashboard(client, {
   name: 'Omega', // Bot's name
   description: 'A super cool bot with an online dashboard!', // Bot's description
-  baseUrl: 'https://dc01.devnode.pro', // Leave this if ur in local development
+  baseUrl: 'http://dc01.devnode.pro', // Leave this if ur in local development
   port: 25575,
   secret: 'hI_76nfA6q_YE2YZD5FtCKyz7fMDkce8', // client.secret -> accessible at https://discord.com/developers/applications (OAuth2 section)
 });
